@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="keywords" content="seminole, spring, baptist, church, jesus, christ, christian"/>
+		<meta name="author" content="Josh McDaniel"/>
+		<meta name="description" content="Seminole Springs Baptist Church"/>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<title>Seminole Springs Baptist Church</title>
+	</head>
+	<body>        
+<!-- Responsive Navbar -->
+    <nav>
+      <ul class="topNav" id="dropdownClick">
+          <li><a href="index.html">Home</a></li>
+	      <li><a href="Sermons.html">Sermons</a></li>
+	      <li><a href="About.html">About</a></li>
+	      <li><a href="Contact.html">Contact Us</a></li>
+          <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+      </ul>
+    </nav>
+<!-- Grid Wrapper -->
+		<div class="wrapper">
+		<header class="title">
+				<h1 id="title1">Seminole Springs Baptist Church</h1>
+				<h1>- We're Saving a Place Just For YOU! -</h1>
+		</header>
+<!-- Main content of the webpage -->  		     
+    <div class="about">
+    <main>
+        <h1>About Us</h1>
+        <p>
+            We are a local church with a global vision. Our desire is to make a positive impact on this world with the love and good news of our Lord and Savior Jesus Christ. Are you looking for a church where you'll be loved, encouraged, and challenged? Do you want to hear preaching that teaches you about God's Word in a way that is easy to understand? Do you want to live a meaningful life that is pleasing to God and leaves a positive mark on society? Then look no further! Let us invite you to join us this Sunday. After all, "We're Saving A Place Just For YOU!!!"
+        </p>
+        <br>
+        <br>
+        <img src="images/pastorResized.jpg" alt="Pastor John McDaniel image" class="profilePic">
+        <h2>Senior Pastor: John McDaniel</h2>
+        <p>
+            Hi my name is John McDaniel. It is a tremendous joy to be the senior pastor of Seminole Springs Baptist Church. Like a lot of people I didn’t grow up in church.  I didn’t have any desire for the things of God. But on July 27, 1997 I attended a revival service and felt a deep need to get right with God. On that night, I repented of my sins and trusted in Jesus Christ to save me.  Since then, God has dramatically changed my life. I now love God, His Word, and others. It is my desire to see everyone come to know Jesus as their personal Lord and Savior. I seek to preach and teach in such a way that the Bible would come alive to you so that you will better understand who God is and what the Bible has to say to you. God is doing great things here and we would love for you to be a part of it. Please take some time to look over our website and be sure to connect with us through the various social media platforms. I hope to see you this SONday!
+        </p>
+    </main>
+    </div>
+    <div class="schedule">
+    <aside>
+        <h1>Service Times</h1>
+        <h2>Sunday</h2>
+        <p>
+            FREE Breakfast: 9:00am<br>
+            Morning Worship: 10:30am
+        </p>
+        <hr>
+        <h2>W.O.W</h2>
+        <h3>(Worship on Wednesday)</h3>
+        <p>
+            7:00pm
+        </p>
+    </aside>
+    </div>
+		
+<!-- Addition information including my information -->
+		<footer>         
+				Website created by Josh McDaniel
+		</footer>
+	   </div>
+        
+        <script>
+            function dropdownMenu() {
+                var x = document.getElementById("dropdownClick");
+                if (x.className === "topNav") {
+                    x.className += " responsive";
+                    /* changes topNave to topNav.responseive */
+                } else {
+                    x.className = "topNav";
+                }
+            }
+        </script>
+        
+	</body>
+</html>
