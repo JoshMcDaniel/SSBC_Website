@@ -1,6 +1,7 @@
 /*########### Defaults ###############*/
+
 html {
-	background-color: #fefefe;
+/*	background-color: #fefefe;*/
     font-family: arial, helvetica, geneva, sans-serif;
 }
 
@@ -10,7 +11,23 @@ nav, header, footer {
 
 body {
 	margin: 0;
+    background-image: url(images/churchLogo3.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+body, html {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 
 /*############# Nav Bar ###############*/
 
@@ -47,7 +64,7 @@ ul.topNav li a {
 
 ul.topNav a:hover {
     background-color: #d4d7dd;
-    color: #000
+    color: #000;
 }
 
 ul.topNav li.dropdownIcon {
@@ -56,18 +73,32 @@ ul.topNav li.dropdownIcon {
 
 /*############# Grid Wrapper ################*/
 
-.wrapper {
+.Wrapper {
 	display: grid;
-    grid-template-columns: repeat(5 1fr);
-	grid-template-rows: 1fr repeat(5 auto);
-    grid-gap: 1em;
+    grid-template-columns: repeat(12, 8.33%);
+    grid-template-rows: 550px auto auto auto auto;
+    grid-gap: 0;
+}
+
+.InnerWrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 10%;
 }
 
 /*################ Content ###################*/
 
+
+.pastor, .sermonsLink, .doctrine {
+     -webkit-box-shadow: 0px 5px 15px 0px
+        rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 5px 15px 0px
+        rgba(0,0,0,0.7);
+    box-shadow: 0px 5px 15px 0px
+        rgba(0,0,0,0.7);
+}
+
 .title {
-	/*grid-area: header;*/
-	grid-column: 1 / 5;
+	grid-column: 1 / 13;
 	grid-row: 1 / 2;
 	background: url(images/crosses.jpg)  center center no-repeat;
 	background-size: cover;
@@ -91,88 +122,153 @@ ul.topNav li.dropdownIcon {
 #title1 {
 	font-family: 'Dancing Script', cursive;
 	font-size: 85px;
-	text-shadow: 0px 3px 0px #6f0564,
-                 0px 14px 10px rgba(0,0,0,0.15),
-                 0px 24px 2px rgba(0,0,0,0.1),
-                 0px 34px 30px rgba(0,0,0,0.1);
 }
 
-.sermons {
-	background: url(images/worship.jpg) center center no-repeat;
-	background-size: cover;
-    border-radius: 5%;
-	/*grid-area: main;*/
-	grid-column: 2 / 3;
-	grid-row: 2 / 3;
-	text-align:center;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 50px;
-	padding-bottom: 50px;
-    color: white;
+/*
+.flexing {
+    display: flex;
+    flex-direction:row;
+    align-content: space-between;
 }
+*/
 
-.about {
-	/*background: url(images/bible.jpg) center center no-repeat;
-	background-size: cover;
-	grid-area: main;*/
-	grid-column: 1 / 5;
-	grid-row: 2 / 3;
-    margin: 0;
-	padding-left: 100px;
-	padding-right: 100px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-    color: darkslategray;
-    word-spacing: 5px;
-    overflow: auto;
-    text-align: justify;
-    
-}
 
-.contact {
-	/*grid-area: aside;*/
-	grid-column: 1 / 4;
-	grid-row: 3 / 4;
-	background-color: #413a51;
-    border-radius: 3%;
-	text-align: center;
-    border: 1px solid black;
-    margin-left: 5px;
-    margin-right: 5px;
-	padding: 5px;
-    color: white;
-	text-shadow: 2px 2px 8px #9933ff;
+.sermonsLink .aboutLink {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+/*
+    margin-left: auto;
+    margin-right: auto;
+*/
+
 }
 
 .schedule {
-	/*grid-area: aside;*/
-	grid-column: 1 / 4;
-	grid-row: 3 / 4;
-    border-radius: 5%;
+	grid-column: 1 / 5;
+	grid-row: 2 / 3;
+/*    border-radius: 5%;*/
+    padding: 2rem;
     font-size: 20px;
 	text-align: center;
-    border: 1px solid black;
-	margin-left: 5px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 50px;
-	padding-bottom: 5px;
-    color: darkslategray;
-	text-shadow: 2px 2px 8px gray;
+    overflow: hidden;
+	text-shadow: 0px 1px 0px lightgray,
+                 0px 10px 10px rgba(0,0,0,0.15),
+                 0px 18px 2px rgba(0,0,0,0.1),
+                 0px 20px 30px rgba(0,0,0,0.1);
 }
 
-.profilePic {
+.sermonsLink {
+    grid-column: 5 / 9;
+	grid-row: 2 / 3;
+	background: url(images/worship2.jpg) center center no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.aboutLink {
+    grid-column: 9 / 13;
+	grid-row: 2 / 3;
+	background: url(images/bible.jpg) center center no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.aboutLink:hover {
+    background-size: 1000px;
+}
+
+.inboxText {
+    color: white;
+    height: 100%;
+}
+
+label {
+    font-size: 32px;
+}
+
+.contact {
+	grid-column: 1 / 13;
+	grid-row: 2 / 3;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-radius: 7px;
+	text-align: center;
+    margin: 1rem;
+	padding: 2rem;
+}
+
+.form {
+    grid-column: 1 / 13;
+	grid-row: 3 / 4;
+    padding: 2rem;
+}
+
+div.about {
+	grid-column: 1 / 13;
+	grid-row: 2 / 3;
+    margin: 0;
+	padding: 2rem 4rem;
+    word-spacing: 5px;
+    overflow: auto;
+    text-align: justify;
+    text-shadow: 0 1px 1px #fff;
+/*    background-color:rgba(0, 0, 0, 0.7);*/
+    color: black;    
+}
+
+div.about h1 {
+    text-shadow: 0px 1px 0px lightgray,
+                 0px 10px 10px rgba(0,0,0,0.15),
+                 0px 18px 2px rgba(0,0,0,0.1),
+                 0px 20px 30px rgba(0,0,0,0.1);
+}
+
+div.pastor {
+    grid-column: 1 / 13;
+	grid-row: 3 / 4;
+    padding: 1rem;
+    background-color: rgba(153, 153, 153, 0.7);
+    color: white;
+}
+
+/*
+div.profilePic {
+    use this for media query instead
+    grid-column: 1 / 3;
+	grid-row: 2 / 3;
+    background: url(images/pastorUncropped.jpg) center center no-repeat;
+    background-size: cover;
+    margin: 0;
+    border-radius: 2%;
+     -webkit-box-shadow: 0px 5px 15px 0px
+        rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 5px 15px 0px
+        rgba(0,0,0,0.7);
+    box-shadow: 0px 5px 15px 0px
+        rgba(0,0,0,0.7);
+}
+*/
+
+.pastorImg {
     float: left;
-    height= 10%;
-    width= 10%;
-    border-radius: 50%;
-    margin-top: 30px;
-    margin-right: 20px;
+    width: 33%;
+    height: auto;
+    padding: 1rem;
+    border-radius: 6%;
+    justify-content: center;
 }
 
-article {
-	padding: 8px;
+div.doctrine {
+    grid-column: 2 / 12;
+	grid-row: 4 / 5;
+    background-image: url(images/paperImg.png);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 4rem 0;
+    padding: 4rem;
 }
 
 .contact:hover, .sermons:hover, {
@@ -181,34 +277,49 @@ article {
 }
 
 hr {
-	width: 90%;
+	width: 100%;
 	height: 1px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 3rem auto;
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.center {
+    text-align: center;
 }
 
  p {
-     overflow: hidden;
-     display: block;
-     color: #7a7c7f; 
-     font-size: 25px;
-     font-family: "Libre Baskerville", serif;
+     font-size: 24px;
+     font-family: 'Kalam', cursive;
      line-height: 35px;
-     text-shadow: 0 1px 1px #fff;
+}
+
+span.verses {
+    font-size: 80%;
 }
 
 footer {
-	/*grid-area: footer;*/
+    grid-column: 1 / 13;
+	grid-row: 6 / 7;
+/*
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 10%;
+*/
 	background-color: #af111c;
-	grid-column: 1 / 5;
-	grid-row: 5 / 6;
 	font-size: 90%;
+    display: inline-grid;
 	text-align: center;
     margin: 0;
-	padding: 2px;
-	color: #ffffff;
-	text-shadow: 2px 2px 8px #9933ff;
+	padding: 1rem;
+	color: white;
     clear: both;
+}
+
+author {
+    font-size: 50%;
+    margin: 0;
 }
 
 /*---------------Social Media--------------*/

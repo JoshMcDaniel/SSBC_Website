@@ -5,111 +5,184 @@
 		<meta name="author" content="Josh McDaniel"/>
 		<meta name="description" content="Seminole Springs Baptist Church"/>
 		<meta charset="utf-8"/>
-		<meta name"viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"/>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <script type="text/javascript" src="script.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<title>Seminole Springs Baptist Church</title>
 	</head>
 	<body>
+        
 <!-- Responsive Navbar -->
+        
     <nav>
-      <label for="drop" class="toggle">Menu</label>
-      <input type="checkbox" id="drop" />
-      <ul class="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="Sermons.html">Sermons</a></li>
-      <li><a href="About.html">About</a></li>
-      <li><a href="Contact.html">Contact Us</a></li>
+      <ul class="topNav" id="dropdownClick">
+          <li><a href="index.html">Home</a></li>
+	      <li><a href="Sermons.html">Sermons</a></li>
+	      <li><a href="About.html">About</a></li>
+	      <li><a href="Contact.html">Contact Us</a></li>
+          <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
       </ul>
     </nav>
+        
 <!-- Grid Wrapper -->
-		<div class="wrapper">
+        
+    <div class="Wrapper">
+        
+<!-- Header -->
+        
 		<header class="title">
-				<h1 id="title1">Seminole Springs Baptist Church</h1>
-				<h2>Contact Us</h2>
+            <h1 id="title1">Seminole Springs Baptist Church</h1>
+            <h2>Contact Us</h2>
 		</header>
-<!-- Main content of my webpage -->
-		<main>
-      <h1>Phone Number</h1>
-        <p>352-589-5555</p>
-      <h1>Email</h1>
-        <p>office@seminolespringsbaptist.com</p>
-      <h1>Address</h1>
-        <p>
-          35025 Huff Road
-          Eustis, Florida 32736
-          Google Maps
-        </p>
-		</main>
-             <div class="contact">
-        <h1>Contact Us</h1>
-        <h3>Please contact us for further information.<br>
-        We would love to hear from you!</h3>
-    </div>
-		<form>
-      <!-- Begin Form -->
-    <form autocomplete="on"
-      method="post"
-      action="http://ss1.ciwcertified.com/cgi-bin/process.pl">
-      <!-- Personal Information -->
-      <fieldset name="personal_info">
-      <legend>Your Information</legend>
-        <p class="required">
-        <label for="firstname">First Name: </label><input type="text" name="FirstName" id="firstname" size="40" maxlength="40" placeholder="example: John" autofocus required/>
-        </p>
-        <p class="required">
-        <label for="lastname">Last Name: </label><input type="text" name="LastName" id="lastname" size="40" maxlength="40" placeholder="example: Smith" required/>
-        </p>
-        <p class="required">
-        <label for="email">Email: </label><input type="email" name="Email" id="email" size="40" maxlength="40" placeholder="example: johnsmith@gmail.com" pattern="^.+@.+$" required/>
-        </p>
-        <p>
-        <label for="tel">Phone Number: </label><input type="tel" name="tel" id="tel" maxlength="20" size="12" placeholder="(123)456-7890" pattern="^[0-9\-\+\s\(\)]*$" />
-        </p>
-      </fieldset>
-      <br>
-      <!-- Web Info -->
-      <fieldset name="web_info">
-      <legend>Web Information</legend>
-        <p>
-        How did you hear about Seminole Springs Baptist Church?
-        <br>
-					<select name="HowFound" id="howfound">
-						<option value="Online">Online Search</option>
-						<option value="Member">Church Member</option>
-						<option value="Other">Other</option>
-					</select>
-					</p>
-        <p>
-        Would you like one of our representitives to contact you?
-        <br>
-        <input type="radio" name="reply" value="yes" checked="checked" id="yes"/><label for="yes">Yes</label>
-        <input type="radio" name="reply" value="no" id="no"/><label for="no">No</label>
-        </p>
-      <!-- Feedback -->
-      </fieldset>
-      <br>
-      <fieldset name="feedback">
-      <legend>Feedback</legend>
-        <p>
-        Rate our website!:<br>
-        <em>(poor)</em> 0 <input type="range" name="rating" id="rating" min="1" max="5"/> 5 <em>(great)</em>
-        <p>
-        <label for="feedback">Please provide feedback about our website:</label><br>
-        <textarea name="Feedback" placeholder="Thank you for your feedback! (150 characters max)" cols="40" rows="3" id="feedback" maxlength="150" ></textarea>
-        </p>
-      </fieldset>
-      <br>
-      <p class="center">
-      <button type="submit">Submit Form</button>
-      <button type="reset">Reset Form</button>
-      </p>
-    </form>
-    </form>
+            
+<!-- Main content of contacts page webpage -->
+        
+       <div class="contact">
+           <h1>Contact Us</h1>
+           <h3>
+               Please contact us for further information.<br>We would love to hear from you!
+           </h3>
+           
+           <div class="InnerWrapper">
+               <h2>Phone Number</h2>
+               <span>352-589-5555</span>
+
+               <h2>Email</h2> 
+                <span>
+                    office@seminolespringsbaptist.com
+                </span>
+
+                <h2>Address</h2>
+                <span>
+                  35025 Huff Road
+                  Eustis, Florida 32736
+                  Google Maps
+                </span>
+            </div>
+        </div>
+        
+<!-- Form -->
+        
+        <form class="form">
+        <form autocomplete="on"
+          method="post"
+          action="http://ss1.ciwcertified.com/cgi-bin/process.pl">
+          
+<!-- Personal Information -->
+            <fieldset name="personal_info">
+            <legend>Your Information</legend>
+                
+                <p class="required">
+                    <label for="firstname">
+                        First Name: 
+                    </label>
+                    <input type="text" name="FirstName" id="firstname" size="40" maxlength="40" placeholder="example: John" autofocus required/>
+                </p>
+                
+                <p class="required">
+                    <label for="lastname">
+                        Last Name: 
+                    </label>
+                    <input type="text" name="LastName" id="lastname" size="40" maxlength="40" placeholder="example: Smith" required/>
+                </p>
+            
+                <p class="required">
+                    <label for="email">
+                        Email: 
+                    </label>
+                    <input type="email" name="Email" id="email" size="40" maxlength="40" placeholder="example: johnsmith@gmail.com" pattern="^.+@.+$" required/>
+                </p>
+                
+                <p>
+                    <label for="tel">
+                        Phone Number: 
+                    </label>
+                    <input type="tel" name="tel" id="tel" maxlength="20" size="12" placeholder="(123)456-7890" pattern="^[0-9\-\+\s\(\)]*$" />
+                </p>
+          </fieldset>
+          <br>
+            
+<!-- Web Info -->
+            
+            <fieldset name="web_info">
+                <legend>Web Information</legend>
+                <p>
+                    How did you hear about Seminole Springs Baptist Church?
+                    <br>
+                    <select name="HowFound" id="howfound">
+                        <option value="Online">
+                            Online Search
+                        </option>
+                        <option value="Member">
+                            Church Member
+                        </option>
+                        <option value="Other">
+                            Other
+                        </option>
+                    </select>
+                </p>
+                
+                <p>
+                    Would you like one of our representitives to contact you?
+                    <br>
+                    <input type="radio" name="reply" value="yes" checked="checked" id="yes"/>
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="reply" value="no" id="no"/>
+                    <label for="no">No</label>
+                </p>
+                
+            </fieldset>
+            
+<!-- Feedback -->
+            
+          <br>
+          <fieldset name="feedback">
+              <legend>Feedback</legend>
+              
+              <p>
+                  Rate our website!:
+                  <br>
+                  <em>(poor)</em> 0 <input type="range" name="rating" id="rating" min="1" max="5"/> 5 <em>(great)</em>
+              </p>
+              
+              <p>
+                  <label for="feedback">Please provide feedback about our website:</label><br>
+                  <textarea name="Feedback" placeholder="Thank you for your feedback! (150 characters max)" cols="40" rows="3" id="feedback" maxlength="150" ></textarea>
+              </p>
+              
+          </fieldset>
+          <br>
+            <p class="center">
+                <button type="submit">Submit Form</button>
+                <button type="reset">Reset Form</button>
+            </p>
+        </form>
+        </form>
+        
 <!-- Addition information including my information -->
-		<footer>
-			Website created by Josh McDaniel
+        
+		<footer class="InnerWrapper">
+            <h3>Phone Number</h3>
+            <h3>Email</h3>
+            <h3>Address</h3>
+            <span>352-589-5555</span> 
+            <span>
+                <a href="mailto:office@seminolespringsbaptist.com">
+                office@seminolespringsbaptist.com
+                </a>
+            </span>
+            <span>
+                <a href="https://www.google.com/maps/place/Seminole+Springs+Baptist+Church/@28.860075,-81.5202986,17z/data=!4m13!1m7!3m6!1s0x88e7a0a7d68f5de9:0x53bb1ae128131d39!2s35025+Huff+Rd,+Eustis,+FL+32736!3b1!8m2!3d28.860075!4d-81.5181099!3m4!1s0x88e7a0a7d68f5de9:0x7db13713aa8ed058!8m2!3d28.860075!4d-81.5181099">
+                35025 Huff Road Eustis, Florida 32736
+                </a>
+            </span>
+            <br>
+			<span class="author">
+                Website created by Josh McDaniel
+            </span>
 		</footer>
 	</div>
-	</body>
+    </body>
 </html>

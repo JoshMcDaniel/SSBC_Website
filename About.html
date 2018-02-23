@@ -5,39 +5,150 @@
 		<meta name="author" content="Josh McDaniel"/>
 		<meta name="description" content="Seminole Springs Baptist Church"/>
 		<meta charset="utf-8"/>
-		<meta name"viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Kalam:300" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <script type="text/javascript" src="script.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<title>Seminole Springs Baptist Church</title>
 	</head>
 	<body>
+        
 <!-- Responsive Navbar -->
+        
     <nav>
-      <label for="drop" class="toggle">Menu</label>
-      <input type="checkbox" id="drop" />
-      <ul class="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="Sermons.html">Sermons</a></li>
-      <li><a href="About.html">About</a></li>
-      <li><a href="Contact.html">Contact Us</a></li>
+      <ul class="topNav" id="dropdownClick">
+          <li><a href="index.html">Home</a></li>
+	      <li><a href="Sermons.html">Sermons</a></li>
+	      <li><a href="About.html">About</a></li>
+	      <li><a href="Contact.html">Contact Us</a></li>
+          <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
       </ul>
     </nav>
+        
 <!-- Grid Wrapper -->
-		<div class="wrapper">
-		<header class="title">
-				<h1 id="title1">Seminole Springs Baptist Church</h1>
-				<h2>About Us</h2>
-		</header>
+            
+    <div class="Wrapper">
+        
+        <header class="title">
+            <h1 id="title1">Seminole Springs Baptist Church</h1>
+            <h1>- We're Saving a Place Just For YOU! -</h1>
+        </header>
+        
 <!-- Main content of my webpage -->
-		<main>
-
-		</main>
-		<aside>
-
-    </aside>
+                        
+    <div class="about">
+        <main>
+            <h1>Who We Are</h1>
+            <p>
+                We are a local church with a global vision. Our desire is to make a positive impact on this world with the love and good news of our Lord and Savior Jesus Christ. Are you looking for a church where you'll be loved, encouraged, and challenged? Do you want to hear preaching that teaches you about God's Word in a way that is easy to understand? Do you want to live a meaningful life that is pleasing to God and leaves a positive mark on society? Then look no further! Let us invite you to join us this Sunday. After all, "We're Saving A Place Just For YOU!!!"
+            </p>
+        </main>
+    </div>
+        
+    <div class="pastor">
+        <div>
+            <img src="images/pastorUncropped.jpg", class="pastorImg">
+        </div>
+        <h2>Senior Pastor: John McDaniel</h2>
+        <p>
+            Hi my name is John McDaniel. It is a tremendous joy to be the senior pastor of Seminole Springs Baptist Church. Like a lot of people I didn’t grow up in church.  I didn’t have any desire for the things of God. But on July 27, 1997 I attended a revival service and felt a deep need to get right with God. On that night, I repented of my sins and trusted in Jesus Christ to save me.  Since then, God has dramatically changed my life. I now love God, His Word, and others
+        </p>
+        <p>
+            It is my desire to see everyone come to know Jesus as their personal Lord and Savior. I seek to preach and teach in such a way that the Bible would come alive to you so that you will better understand who God is and what the Bible has to say to you. God is doing great things here and we would love for you to be a part of it. Please take some time to look over our website and be sure to connect with us through the various social media platforms. I hope to see you this SONday!
+        </p>
+    </div>
+    
+    <div class="doctrine">
+        <h1 class="center">Our Doctrine</h1>
+        <hr>
+        <h2>TRINITY</h2>
+        <p>
+            There is one God, eternally existent in three persons: Father, Son and Holy Spirit. These three are co-equal and co-eternal. 
+            <span class="verses">
+                (I John 5:7; Genesis 1:26; Matthew 3:16-17, 28:19; Luke 1:35; Isaiah 9:6; Hebrews 3:7-11)
+            </span>
+        </p>
+        
+        <h2>GOD THE FATHER</h2>
+        <p>
+            We believe in God the Father, Creator of heaven and earth, perfect in holiness, infinite in wisdom and sovereign in measureless power. He concerns Himself mercifully in the affairs of men, He hears and answers prayer, and He saves from sin and death all that come to Him through Jesus Christ. <span class="verses">(Matthew 5:48; Genesis 1:1; Hebrews 11:3; Nehemiah 9:6; Hebrews 1:2-3; Psalm 103:19; Ephesians 1:11; 1 Kings 8:27; and Psalm 90:2)</span>
+        </p>
+        
+        <h2>JESUS CHRIST</h2>
+        <p>
+            Jesus Christ is God the Son, the second person of the Trinity. On earth, Jesus was fully God and fully man. In every way He is equal in nature, character and power with God the Father. He was born of a virgin, lived a sinless life, performed miracles, died on the cross for lost humanity and thus, atoned for our sins through the shedding of His blood. He rose from the dead on the third day according to the Scriptures, ascended to the right hand of the Father, currently rules from Heaven’s throne and will return again to earth in power and glory. <span class="verses">(John 1:1,14, 20:28; I Timothy 3:16; Isaiah 9:6; Philippians 2:5-6; I Timothy 2:5)</span>
+        </p>
+            
+        <h2>THE HOLY SPIRIT</h2>
+        <p>
+            We believe in the Holy Spirit, who came forth from God to convict the world of sin, to convince the world of righteousness, of judgment, and to regenerate, sanctify, and secure all who believe in Jesus Christ. He supernaturally empowers all believers for ministry. He works in all believers, producing spiritual fruit that is consistent with the character of God. He gives gifts to men in order to advance the Gospel of Jesus Christ, strengthen the church and open the eyes of unbelievers to the power of the Gospel of Kingdom. <span class="verses">(John 15:26; John 16:8-11; Romans 6:3-6; 1 Corinthians 12:13; 2 Thessalonians 2:13; and 1 Peter 1:1-3)</span>
+        </p>
+            
+        <h2>SCRIPTURE</h2>
+        <p>
+            We believe that the Scriptures of the Old and New Testament are inspired by God and without error in the original writings, and that they are of supreme and final authority in faith and conduct. We are gladly bound to the authority of the Scriptures and evaluate all our beliefs and practices (not regarding or holding to new trends or denominational/cultural traditions) against the truth of God’s Word. <span class="verses">(II Timothy 3:16; II Peter 1:20-21; Proverbs 30:5; Romans 16:25-26)</span>
+        </p>
+            
+        <h2>JESUS’ BLOOD</h2>
+        <p>
+            The Blood that Jesus Christ shed on the Cross of Calvary was the perfect payment for sin and is perfectly sufficient to cleanse mankind of all sin. Jesus allowed Himself to be punished for both our sinfulness and our sins, enabling all those who believe to be free from the penalty of sin, which is death. (I John 1:7; Revelation 1:5, 5:9; Colossians 1:20; Romans 3:10-12, 23, 5:9; John 1:29) The Blood that Jesus Christ shed on the Cross of Calvary was the perfect payment for sin and is perfectly sufficient to cleanse mankind of all sin. Jesus allowed Himself to be punished for both our sinfulness and our sins, enabling all those who believe to be free from the penalty of sin, which is death. <span class="verses">(I John 1:7; Revelation 1:5, 5:9; Colossians 1:20; Romans 3:10-12, 23, 5:9; John 1:29)</span>
+        </p>
+            
+        <h2>RESURRECTION</h2>
+        <p>
+            Jesus Christ was physically resurrected from the dead in a glorified body three days after His death on the cross. In addition, both the saved and the lost will be resurrected; they that are saved to the resurrection of life and they that are lost to the resurrection of eternal damnation. <span class="verses">(Luke 24:16, 36, 39; John 2:19-21, 20:26-28, 21:4; Acts 24:15; I Corinthians 15:42, 44; Philippians 1:21-23, 3:21)</span>
+        </p>
+            
+        <h2>REDEMPTION/SALVATION</h2>
+        <p>
+            Man was originally created good and upright in perfect standing with God the Creator. By voluntary transgression he fell in the Garden of Eden; all descendants of Adam inherit his sin nature and the only hope of redemption is in Jesus Christ, the Son of God – specifically His death, burial, and resurrection. Salvation is a gift from God. When placing one’s faith in Jesus Christ (plus nothing, minus nothing), one is justified before God upon the merits of Jesus Christ. Salvation is by grace through faith via repentance toward God. <span class="verses">(Gen. 1:26-31, 3:1-7; Romans 5:12-21; Acts 17:30)</span>
+        </p>
+            
+        <h2>HEAVEN</h2>
+        <p>
+            Heaven is the eternal dwelling place for all believers in Jesus Christ. Additionally, Heaven is not just a place that believers enter when they die; it is the character of the Kingdom of God that comes into the earth through the proclamation and demonstration of the Gospel of the Kingdom. <span class="verses">(Matthew 5:3, 12, 20, 6:20, 19:21, 25:34; John 17:24; II Corinthians 5:1; Hebrews 11:16; I Peter 1:4)</span>
+        </p>
+            
+        <h2>HELL</h2>
+        <p>
+            After living one life on earth, unbelievers will be judged by God and sent to Hell where they will be eternally tormented with the Devil and the Fallen Angels. <span class="verses">(Matthew 25:41; Mark 9:43-48; Hebrews 9:27; Revelation 14:9-11, 20:12-15, 21:8)</span>
+        </p>
+            
+        <h2>THE CHURCH</h2>
+        <p>
+            The church is the Body of Christ, the habitation of God through the Spirit, with divine appointments for the fulfillment of Jesus’ great commission. Every person who is born of the Spirit is an integral part of the Church as a member of the body of believers. There is a spiritual unity of all believers in our Lord Jesus Christ. The local church is a visible expression of the invisible church. To belong to the local church is part of the design of God for all believers. <span class="verses">(Ephesians 1:22, 2:19-22; Hebrews 12:23; John 17:11, 20-23; Hebrews 10:24-25)</span>
+        </p>
+            
+        <h2>THE SECOND COMING</h2>
+        <p>
+            We believe in the glorious hope of the visible and bodily return of Jesus Christ. <span class="verses">(Matthew 24:30, 26:63-64; Acts 1:9-11; I Thessalonians 4:15-17; II Thessalonians 1:7-8; Revelation 1:7)</span>
+        </p>
+    
+    </div>
+            
 <!-- Addition information including my information -->
-		<footer>
-			Website created by Josh McDaniel
+        
+		<footer class="center">
+            <h3>Phone Number</h3>
+            <h3>Email</h3>
+            <h3>Address</h3>
+            <span>352-589-5555</span> 
+            <span>
+                <a href="mailto:office@seminolespringsbaptist.com">
+                office@seminolespringsbaptist.com
+                </a>
+            </span>
+            <span>
+                <a href="https://www.google.com/maps/place/Seminole+Springs+Baptist+Church/@28.860075,-81.5202986,17z/data=!4m13!1m7!3m6!1s0x88e7a0a7d68f5de9:0x53bb1ae128131d39!2s35025+Huff+Rd,+Eustis,+FL+32736!3b1!8m2!3d28.860075!4d-81.5181099!3m4!1s0x88e7a0a7d68f5de9:0x7db13713aa8ed058!8m2!3d28.860075!4d-81.5181099">
+                35025 Huff Road Eustis, Florida 32736
+                </a>
+            </span>
+            <br>
+			<span class="author">
+                Website created by Josh McDaniel
+            </span>
 		</footer>
 	</div>
 	</body>
