@@ -7,6 +7,7 @@
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Kalam:300" rel="stylesheet">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <script type="text/javascript" src="script.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css" />
@@ -27,21 +28,61 @@
     </nav>
         
 <!-- Grid Wrapper -->
-		<div class="wrapper">
-		<header class="title">
-				<h1 id="title1">Seminole Springs Baptist Church</h1>
-				<h2>Sermons</h2>
-		</header>
+    
+    <div class="Wrapper">
+        
+        <header class="title">
+            <img src="images/crosses.jpg" alt="crosses">
+            <h1 id="title1">
+                Seminole Springs Baptist Church
+            </h1>
+            <h2 id="catchPhrase">
+                - We're Saving a Place Just For YOU! -
+            </h2>
+        </header>
+            
 <!-- Main content of my webpage -->
-		<div class="sermons">
-        <h1>Sermons</h1>
-        <h3>Watch or listen to sermons preached right here at SSBC by Pastor John McDaniel</h3>
-    </div>
-		<aside>
+<!--
+        <div class="vidInfo">
+            <h1>Latest Upload</h1>
+            <p>
+                Watch the latest sermon from the preaching Ministry of Pastor John McDaniel on Feb. 25, 2018.
+            </p>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <div class="youTubeVid">
+            <iframe id="youtube_video" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+        </div>
 
-    </aside>
+    <script>
+        var channelID = "UC-2UUaVukuu7FgXmOH-jdmg";
+        $.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3D'+channelID, function(data) {
+           var link = data.items[0].link;
+           var id = link.substr(link.indexOf("=")+1);
+            $("#youtube_video").attr("src","https://youtube.com/embed/"+id + "?controls=0&showinfo=0&rel=0");
+        });
+    </script>
+-->
+        
+       <div class="playlist1"> 
+           <h1>Faith That Works<br>The Study of The Book of James</h1>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLlOLMSlwdrOXpFl1oXUAwRkbM77RHYhUH" allowfullscreen></iframe>
+        </div>
+        
+        <div class="playlist2"> 
+           <h1>Featured Messages</h1>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLlOLMSlwdrOXbJ7oVC5D29BUDQZap-Kua" allowfullscreen></iframe>
+        </div>
+        
+        <div class="playlist3"> 
+           <h1>Rebuilding The Walls. Study of Nehemiah</h1>
+            <iframe src="https://www.youtube.com/embed/videoseries?list=PLlOLMSlwdrOV1pHlu-1Uvro-VpaS_Muds" allowfullscreen></iframe>
+        </div>
+
+
+            
 <!-- Addition information including my information -->
-<footer class="center">
+        <footer class="innerWrapper">
             <h3>Phone Number</h3>
             <h3>Email</h3>
             <h3>Address</h3>
