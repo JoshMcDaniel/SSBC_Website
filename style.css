@@ -78,12 +78,6 @@ ul.topNav li.dropdownIcon {
     grid-gap: 2rem;
 }
 
-.innerWrapper {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 10%;
-    grid-auto-rows: minmax(100px, auto);
-}
-
 /*################ Content ###################*/
 
 
@@ -138,7 +132,7 @@ ul.topNav li.dropdownIcon {
 	font-size: 40px;
     position: absolute;
     width: 100%;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -256,12 +250,30 @@ ul.topNav li.dropdownIcon {
     font-size: 24px;
 }
 
+.news {
+    grid-column: 1 / 13;
+	grid-row: 5 / 6;
+    background-color: white;
+    text-align: center;
+    margin: 4rem 0;
+    padding:  4rem 8rem;
+}
+
+.newsImgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.news p, .newsImgs p {
+    text-align: left;
+}
+
 .playlist1, .playlist2, .playlist3 {
     text-align: center;
     background-color: white;
     margin: 2rem 0;
     padding: 1rem 0;
-    
 }
 
 iframe {
@@ -436,18 +448,16 @@ footer {
     grid-column: 1 / 13;
 	grid-row: 6 / 7;
 	background-color: #af111c;
-	font-size: 90%;
-    display: inline-grid;
-	text-align: center;
-    margin: 4rem 0 0 0;
+    display: flex;
+    margin: 0;
 	padding: 1rem;
 	color: white;
     clear: both;
 }
 
-author {
-    font-size: 50%;
-    margin: 0;
+.innerWrapper {
+    display: block;
+    text-align: center;
 }
 
 /*---------------Social Media--------------*/
@@ -475,24 +485,33 @@ author {
     .title {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
+        max-height: 300px;
+        margin: 0;
     }
 
     #title1 {
-        font-size: 44px;
+        font-size: 40px;
         padding: 0;
         margin: 0;
+        width: 100%;
+        max-height: 300px;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     #catchPhrase {
-        font-size: 20px;
-        padding: 0;
-        margin: 0;
+        font-size: 18px;
+        width: 100%;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .sermonsLink, .aboutLink, .contactLink {
         height: 95%;
         border-radius: 0px;
-        margin: 1rem 0;
+        margin: 0;
     }
 
     .sermonsLink {
@@ -553,6 +572,23 @@ author {
     .ptText {
         margin: 0;
         padding: 4px 0;
+    }
+    
+    .news {
+        grid-column: 1 / 13;
+        grid-row: 8 / 9;
+        background-color: white;
+        text-align: center;
+        margin: 4rem 0;
+        padding: 1rem;
+    }
+
+    .newsImgs {
+        display: block;
+    }
+    
+    .newsImgs img {
+        width: 100%;
     }
     
     .playlist1, .playlist2, .playlist3 {
@@ -658,6 +694,8 @@ legend {
     .about {
         grid-column: 1 / 2;
         grid-row: 2 / 3;  
+        padding: 2rem;
+        line-height: 0;
     }
 
     .about h1 {
@@ -683,6 +721,11 @@ legend {
         margin: 1rem 0;
         padding: 2rem;
     }
+    
+    p {
+        font-size: 20px;
+        line-height: 2rem;
+    }
 
     hr {
         margin: 1rem auto;
@@ -690,7 +733,7 @@ legend {
 
     footer {
         grid-column: 1 / 2;
-        grid-row: 8 / 9;
+        grid-row: 9 / 10;
         display: block;
         text-align: center;
         margin: 0;
@@ -706,13 +749,14 @@ legend {
     ul.topNav li.dropdownIcon {
         display: block;
         float: right;
-        padding: 1rem;
     }
     
     ul.topNav.responsive li.dropdownIcon {
         position: absolute;
         top: 0;
         right: 0;
+        padding: 0;
+        margin: 1rem;
     }
 
     ul.topNav.responsive {
@@ -723,23 +767,23 @@ legend {
     }
 
     ul.topNav.responsive li {
-        display: inline;
-        float: none;  
+        display: inline-block;
+        float: none; 
+        padding: 4px;
+        margin: 0;
+        float: right;
     }
     
     ul.topNav.responsive li a {
         display: block;
         text-align: right;
+        border-left: none;
+        border-right: none;
     }
 
     nav ul {
         padding: 0;
         margin: 0;
-    }
-
-    ul.topNav li a {
-        border-left: none;
-        border-right: none;        
     }
 
 }
